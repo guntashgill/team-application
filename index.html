@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Application - Guntash Gill & Andrew Xiong</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .member-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .member-photo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            display: block;
+            border: 5px solid #667eea;
+        }
+
+        .member-name {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .member-role {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .member-description {
+            text-align: left;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .collaboration-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .collaboration-list li {
+            padding: 15px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .collaboration-list li strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+
+        /* simple button used for resume download */
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #667eea;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+        .btn:hover {
+            background: #4f63d6;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .team-members {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Guntash Gill & Andrew Xiong</h1>
+            <p class="subtitle">Applying as a team for Technical Product Management Intern — Enterprise Products (Summer 2026)</p>
+        </header>
+
+        <section>
+            <h2>About Our Application</h2>
+            <p>We are excited to apply as a team for the Technical Product Management Intern (Enterprise Products) position at NVIDIA. Throughout our collaboration on multiple projects, we've developed a strong working relationship that combines our complementary skills and shared commitment to excellence. We believe our proven track record of successful teamwork makes us ideal candidates for this position.</p>
+        <div class="team-members">
+            <div class="member-card">
+                <img src="documents/GuntashGill.jpg" alt="Guntash Gill" class="member-photo">
+                <h3 class="member-name">Guntash Gill</h3>
+                <p class="member-role">Technical Product Management Intern — Candidate</p>
+                <div class="member-description">
+                    <p>Full-stack software engineer with hands-on experience building scalable, user-centric applications using React and Node.js. Experienced in cloud deployments (AWS, Azure, GCP) and CI/CD automation via GitHub Actions. Strong foundation in systems design, DevOps practices, and data-driven development within Agile teams; actively contributing to LLM-powered research and production web/mobile projects.</p>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <img src="partner-photo.jpg" alt="Andrew Xiong" class="member-photo">
+                <h3 class="member-name">Andrew Xiong</h3>
+                <p class="member-role">Technical Product Management Intern — Candidate</p>
+                <div class="member-description">
+                    <p>Brief description about your partner, their background, expertise, and what they bring to the team. Include their key skills, education, and relevant experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>Our Collaboration History</h2>
+            <p>We have successfully worked together on several projects, demonstrating our ability to collaborate effectively and deliver results:</p>
+            <ul class="collaboration-list">
+                <li>
+                    <strong>Project 1 Name</strong>
+                    Description of the project, your roles, and the outcomes achieved.
+                </li>
+                <li>
+                    <strong>Project 2 Name</strong>
+                    Description of the project, your roles, and the outcomes achieved.
+                </li>
+                <li>
+                    <strong>Project 3 Name</strong>
+                    Description of the project, your roles, and the outcomes achieved.
+                </li>
+            </ul>
+        </section>
+
+        
+
+        <section class="contact">
+            <h2>Get In Touch</h2>
+                <p>
+                <a href="mailto:gillguntash7@gmail.com">gillguntash7@gmail.com</a> | <a href="https://www.linkedin.com/in/guntash-gill-96653a288/" target="_blank" rel="noopener">LinkedIn</a> | <a href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
+            </p>
+            <p>
+                <a href="mailto:partner.email@example.com">partner.email@example.com</a> | <a href="https://linkedin.com/in/partnerprofile" target="_blank" rel="noopener">Andrew Xiong</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Resume</h2>
+            <p>
+                <a class="btn" href="documents/GuntashGillResumeDec.pdf" download="Guntash_Gill_Resume.pdf" aria-label="Download Guntash Gill resume">Guntash (PDF)</a>
+                <a class="btn" href="Andrew_Xiong_Resume.pdf" download="Andrew_Xiong_Resume.pdf" aria-label="Download Andrew Xiong resume" style="margin-left:12px;">Andrew (PDF)</a>
+            </p>
+        </section>
+    </div>
+</body>
+</html>
